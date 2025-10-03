@@ -93,6 +93,24 @@ const ResearchFlow = () => {
           </Col>
         </Row>
 
+        {/* Instructions */}
+        <Row className="justify-content-center mt-5">
+          <Col lg={8}>
+            <Alert variant="info" className="text-center">
+              <i className="bi bi-info-circle me-2"></i>
+              <strong>Petunjuk:</strong> Klik tombol pada setiap langkah untuk membuka link yang diperlukan. 
+              Pastikan Anda menyelesaikan setiap langkah sebelum melanjutkan ke langkah berikutnya.
+            </Alert>
+            
+            {/* Device Recommendation Alert */}
+            <Alert variant="warning" className="text-center mt-3">
+              <i className="bi bi-laptop me-2"></i>
+              <strong>Rekomendasi:</strong> Untuk pengalaman simulasi yang optimal, 
+              sangat disarankan menggunakan laptop atau komputer desktop dengan layar yang lebih besar.
+            </Alert>
+          </Col>
+        </Row>
+
         {/* Steps */}
         <Row className="justify-content-center">
           {steps.map((step, index) => (
@@ -187,32 +205,14 @@ const ResearchFlow = () => {
                 </Card.Body>
               </Card>
               
-              {/* Connector Arrow */}
+              {/* Connector Arrow - Only on mobile */}
               {index < steps.length - 1 && (
-                <div className="text-center my-3 d-none d-lg-block">
+                <div className="text-center my-3 d-block d-lg-none">
                   <i className="bi bi-arrow-down fs-2 text-muted"></i>
                 </div>
               )}
             </Col>
           ))}
-        </Row>
-
-        {/* Instructions */}
-        <Row className="justify-content-center mt-5">
-          <Col lg={8}>
-            <Alert variant="info" className="text-center">
-              <i className="bi bi-info-circle me-2"></i>
-              <strong>Petunjuk:</strong> Klik tombol pada setiap langkah untuk membuka link yang diperlukan. 
-              Pastikan Anda menyelesaikan setiap langkah sebelum melanjutkan ke langkah berikutnya.
-            </Alert>
-            
-            {/* Device Recommendation Alert */}
-            <Alert variant="warning" className="text-center mt-3">
-              <i className="bi bi-laptop me-2"></i>
-              <strong>Rekomendasi:</strong> Untuk pengalaman simulasi yang optimal, 
-              sangat disarankan menggunakan laptop atau komputer desktop dengan layar yang lebih besar.
-            </Alert>
-          </Col>
         </Row>
 
         {/* Completion Message */}

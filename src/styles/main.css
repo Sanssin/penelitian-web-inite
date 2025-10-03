@@ -136,22 +136,22 @@ body {
 }
 
 .arrow-connector {
+  display: block;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: var(--primary-color);
+  z-index: 3;
+}
+
+.flow-step:last-child .arrow-connector {
   display: none;
 }
 
 @media (min-width: 768px) {
   .arrow-connector {
-    display: block;
-    position: absolute;
-    right: -25px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    color: var(--primary-color);
-    z-index: 3;
-  }
-  
-  .flow-step:last-child .arrow-connector {
     display: none;
   }
 }
@@ -257,6 +257,14 @@ body {
   .btn-research {
     padding: 12px 30px;
     font-size: 1rem;
+  }
+
+  .partner-logo {
+    max-width: 60px;
+  }
+
+  .partner-institutions h6 {
+    font-size: 0.9rem;
   }
 }
 
