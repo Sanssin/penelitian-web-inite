@@ -5,6 +5,9 @@ import logoInite from '../assets/logo_inite.png';
 import atomIcon from '../assets/atom.png';
 import gamePreview from '../assets/game.png';
 import maskot1 from '../assets/maskot1.png';
+import logoBrin from '../assets/BRIN.png';
+import logoPoltek from '../assets/Poltek.png';
+import logoHima from '../assets/logoHimaTransparanPutih.png';
 
 const LandingPage = () => {
   return (
@@ -195,9 +198,25 @@ const LandingPage = () => {
             <Col lg={12}>
               <img src={logoInite} alt="INITE Logo" className="footer-logo" />
               <h5 className="mt-3">INITE - Indonesian Nuclear Interactive Website</h5>
-              <p className="text-muted">Simulasi Pembelajaran Teknologi Nuklir</p>
+              <p>Simulasi Pembelajaran Teknologi Nuklir Berbasis Website</p>              
+              {/* Partner Institutions */}
+              <div className="partner-institutions mt-4 mb-4">
+                <h6 className="mb-3">Didukung Oleh:</h6>
+                <Row className="justify-content-center align-items-center">
+                  <Col xs={4} md={2} className="mb-3">
+                    <img src={logoBrin} alt="BRIN" className="partner-logo" />
+                  </Col>
+                  <Col xs={4} md={2} className="mb-3">
+                    <img src={logoPoltek} alt="Politeknik Teknologi Nuklir BRIN" className="partner-logo" />
+                  </Col>
+                  <Col xs={4} md={2} className="mb-3">
+                    <img src={logoHima} alt="HIMA" className="partner-logo" />
+                  </Col>
+                </Row>
+              </div>
+              
               <hr className="my-4" />
-              <p>&copy; 2025 INITE. Politeknik Teknologi Nuklir BRIN. All rights reserved.</p>
+              <p>&copy; 2025 INITE. Politeknik Teknologi Nuklir-BRIN. All rights reserved.</p>
             </Col>
           </Row>
         </Container>

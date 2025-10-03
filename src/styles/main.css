@@ -208,6 +208,26 @@ body {
   margin-bottom: 1rem;
 }
 
+.partner-institutions h6 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.partner-logo {
+  max-width: 80px;
+  height: auto;
+  filter: brightness(1.2);
+  transition: all 0.3s ease;
+  opacity: 0.9;
+}
+
+.partner-logo:hover {
+  filter: brightness(1.4);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
 .social-links {
   margin: 1rem 0;
 }
