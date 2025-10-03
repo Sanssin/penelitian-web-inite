@@ -15,7 +15,7 @@ const ResearchFlow = () => {
       icon: "bi-clipboard-check",
       action: "Isi Pre-Test",
       url: process.env.REACT_APP_PRETEST_URL || "https://forms.gle/yZXzSFipxhP9JJd47",
-      duration: "~10 menit"
+      duration: "~5 menit"
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const ResearchFlow = () => {
       icon: "bi-controller",
       action: "Buka Simulasi",
       url: process.env.REACT_APP_SIMULATION_URL || "https://inite-polteknuklir.site",
-      duration: "~30-45 menit",
+      duration: "~10-15 menit",
       deviceRecommendation: "💻 Disarankan menggunakan laptop/desktop untuk pengalaman terbaik"
     },
     {
@@ -34,7 +34,7 @@ const ResearchFlow = () => {
       icon: "bi-clipboard-data",
       action: "Isi Post-Test",
       url: process.env.REACT_APP_POSTTEST_URL || "https://forms.gle/NbYR31RSthsyqPsGA",
-      duration: "~10 menit"
+      duration: "~5 menit"
     }
   ];
 
